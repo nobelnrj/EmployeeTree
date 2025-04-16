@@ -92,8 +92,8 @@
 
 .loading-indicator {
   position: absolute;
-  top: 20;
-  right: 20;
+  top: 20px;
+  right: 20px;
   background: #fff;
   padding: 8px 12px;
   border: 1px solid #ddd;
