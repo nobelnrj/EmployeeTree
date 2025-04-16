@@ -40,13 +40,65 @@
   color: #888;
 }
 
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.app .sidebar {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.app .main {
+  width: 70%;
+  height: 100%;
+}
+
+.list-wrapper {
+  list-style: none;
+  padding: 0;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.list-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
 .search-input,
 .team-filter {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   margin: 0 auto;
   padding: 0.5em;
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
+  margin-bottom: 1em;
+}
+
+.employee-node {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.loading-indicator {
+  position: absolute;
+  top: 20;
+  right: 20;
+  background: #fff;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: bold;
 }

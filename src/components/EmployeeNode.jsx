@@ -66,18 +66,7 @@ export const EmployeeNode = ({
   return (
     <g ref={nodeGroupRef} onClick={handleClick}>
       <foreignObject width="200" height="100" x="-100" y="-50">
-        <div
-          data-node-id={nodeDatum.id}
-          style={{
-            padding: "10px",
-            backgroundColor: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: 8,
-            boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-            textAlign: "center",
-            fontFamily: "sans-serif",
-          }}
-        >
+        <div data-node-id={nodeDatum.id} className="employee-node">
           <EmployeeCard nodeDatum={nodeDatum} />
         </div>
       </foreignObject>

@@ -17,8 +17,7 @@ A dynamic employee org chart built in **React + Vite**, visualizing hierarchical
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/employee-tree-app.git
-cd employee-tree-app
+git clone https://github.com/nobelnrj/EmployeeTree.git
 ```
 
 ### 2. Install dependencies
@@ -68,7 +67,6 @@ Each employee object:
   designation: string;
   team: string;
   managerId: string | null;
-  email?: string;
 }
 ```
 
@@ -90,11 +88,6 @@ src/
 
 > 📌 Drag a node (employee) and drop it on another to reassign their manager. Tree re-renders live. Filter by team or search any field.
 
-## 🙌 Credits
-
-- Org chart layout inspired by classic corporate hierarchy trees
-- Icons and photos are placeholders from Unsplash/Pexels
-
 ## 📃 License
 
-MIT © [Your Name]
+MIT © Nobel Reo Jacob

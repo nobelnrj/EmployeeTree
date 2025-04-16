@@ -27,15 +27,8 @@ export default function App() {
   const treeData = buildTree(team ? filteredEmployees : employees);
 
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
-      <div
-        style={{
-          width: "30%",
-          // padding: "1rem",
-          overflowY: "auto",
-          borderRight: "1px solid #ccc",
-        }}
-      >
+    <div className="app">
+      <div className="sidebar">
         <EmployeeList
           employees={filteredEmployees}
           search={search}
@@ -44,7 +37,7 @@ export default function App() {
           setTeam={setTeam}
         />
       </div>
-      <div style={{ width: "70%", height: "100%" }}>
+      <div className="main">
         <TreeChart data={treeData} setEmployees={setEmployees} />
       </div>
     </div>

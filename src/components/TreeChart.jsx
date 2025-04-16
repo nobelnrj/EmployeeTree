@@ -59,24 +59,7 @@ export default function TreeChart({ data, setEmployees }) {
       ref={treeContainer}
       style={{ width: "100%", height: "100%", position: "relative" }}
     >
-      {isLoading && (
-        <div
-          style={{
-            position: "absolute",
-            top: 20,
-            right: 20,
-            background: "#fff",
-            padding: "8px 12px",
-            border: "1px solid #ddd",
-            borderRadius: "6px",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-            fontSize: "14px",
-            fontWeight: "bold",
-          }}
-        >
-          Updating...
-        </div>
-      )}
+      {isLoading && <div className="loading-indicator">Updating...</div>}
       <Tree
         key={treeKey} // 👈 forces remount when data changes
         data={data}

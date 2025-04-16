@@ -22,7 +22,6 @@ export default function EmployeeList({
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search by name, designation, team..."
         className="search-input"
-        style={{ width: "80%", padding: "0.5rem", marginBottom: "1rem" }}
       />
 
       {/* Team Filter Dropdown */}
@@ -30,7 +29,6 @@ export default function EmployeeList({
         value={team}
         onChange={(e) => setTeam(e.target.value)}
         className="team-filter"
-        style={{ width: "80%", padding: "0.5rem", marginBottom: "1rem" }}
       >
         <option value="">All Teams</option>
         {teams.map((t) => (
@@ -41,12 +39,9 @@ export default function EmployeeList({
       </select>
 
       {/* Employee List */}
-      <ul style={{ listStyle: "none", padding: 0 }}>
+      <ul className="list-wrapper">
         {employees.map((emp) => (
-          <li
-            key={emp.id}
-            style={{ padding: "0.5rem 0", borderBottom: "1px solid #eee" }}
-          >
+          <li key={emp.id} className="list-item">
             <EmployeeCard nodeDatum={emp} />
           </li>
         ))}
